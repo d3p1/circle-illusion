@@ -43,7 +43,7 @@ export default class App {
     this.context.save()
     this.context.translate(this.canvas.width / 2, this.canvas.height / 2)
     for (let i = 0; i < this.count; i++) {
-      const offset = i * ((Math.PI) / this.count)
+      const offset = i * ((3 * Math.PI) / this.count)
       const y = Math.sin(offset + sec) * (this.canvas.height / 2)
       this.context.rotate(Math.PI / this.count)
       this.#drawCircle(0, y)
